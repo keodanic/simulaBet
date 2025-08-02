@@ -99,7 +99,7 @@ O **SimulaBET** é um aplicativo móvel desenvolvido como projeto acadêmico com
 ## Autor
 
 * **Victor Daniel Santos Cardoso** - Desenvolvedor principal do projeto.
-    * [LinkedIn](https://www.linkedin.com/in/victor-daniel-santos-cardoso-ab0787344/)
+    * [LinkedIn](www.linkedin.com/in/victordaniel-dev)
     * [GitHub](https://github.com/keodanic)
 
 ## Licença

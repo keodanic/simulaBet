@@ -1,9 +1,5 @@
 # SimulaBET - App ⚽️
 
-<p align="center">
-  <img src="https://seeklogo.com/images/S/supabase-logo-DCC6749964-seeklogo.com.png" width="120" alt="Supabase Logo" />
-</p>
-
 <p align="center">Uma plataforma recreativa de apostas virtuais com jogos e odds reais, mas sem dinheiro de verdade.</p>
 
 ## Descrição do Projeto
@@ -65,7 +61,7 @@ O **SimulaBET** é um aplicativo móvel desenvolvido como projeto acadêmico com
     * Crie um arquivo `.env` na raiz do projeto e adicione suas chaves:
         ```
         EXPO_PUBLIC_SUPABASE_URL="SUA_URL_DO_PROJETO_SUPABASE"
-        EXPO_PUBLIC_SUPABASE_ANON_KEY="SUA_CHAVE_ANON_DO_SUPABASE"
+        EXPO_PUBLIC_SUPABASE_KEY="SUA_CHAVE_ANON_DO_SUPABASE"
         ```
 
 6.  **Estrutura do Banco de Dados**:

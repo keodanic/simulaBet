@@ -1,103 +1,98 @@
-SimulaBET ⚽️💰
+SimulaBET - App ⚽️
 <p align="center">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/React_Native-20232A%3Fstyle%3Dfor-the-badge%26logo%3Dreact%26logoColor%3D61DAFB" alt="React Native">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Expo-20232A%3Fstyle%3Dfor-the-badge%26logo%3Dexpo%26logoColor%3Dwhite" alt="Expo">
-<img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/NativeWind-20232A%3Fstyle%3Dfor-the-badge%26logo%3Dtailwindcss%26logoColor%3Dwhite" alt="NativeWind">
-
+  <img src="https://seeklogo.com/images/S/supabase-logo-DCC6749964-seeklogo.com.png" width="120" alt="Supabase Logo" />
 </p>
 
-📖 Sobre o Projeto
-SimulaBET é uma plataforma recreativa de apostas virtuais baseada em jogos de futebol reais. O objetivo é permitir que usuários testem suas habilidades de aposta em um ambiente seguro e divertido, utilizando um saldo de créditos fictícios que se renova diariamente, mas com odds reais de mercado.
+<p align="center">Uma plataforma recreativa de apostas virtuais com jogos e odds reais, mas sem dinheiro de verdade.</p>
 
-Este projeto foi desenvolvido como um trabalho acadêmico, demonstrando a integração de um frontend mobile com um backend robusto (BaaS), automações e consumo de APIs de terceiros.
+Descrição do Projeto
+O SimulaBET é um aplicativo móvel desenvolvido como projeto acadêmico com o objetivo de criar uma plataforma de apostas recreativas. A plataforma permite que os usuários apostem em jogos de futebol reais, utilizando um saldo de créditos fictícios, enquanto interagem com odds de mercado verdadeiras. O projeto demonstra a integração completa de um frontend mobile com um Backend-as-a-Service (BaaS), incluindo autenticação, banco de dados, automações serverless (Edge Functions) e o consumo de APIs de terceiros em tempo real.
 
-✨ Funcionalidades
-👤 Autenticação de Usuários: Cadastro e Login seguros usando Supabase Auth.
+Funcionalidades Principais
+O aplicativo SimulaBET suporta as seguintes funcionalidades essenciais:
 
-💰 Saldo Virtual: Cada usuário recebe um saldo inicial de 1000 créditos, que é resetado automaticamente caso chegue a zero no dia seguinte.
+Autenticação de Usuários: Sistema completo de cadastro e login utilizando o Supabase Auth.
 
-📊 Odds Reais: Listagem de jogos de futebol reais (Brasileirão, Premier League, etc.) com odds de mercado consumidas da API "The Odds API".
+Criação de Perfis: Geração automática de perfis de usuário no banco de dados no momento do cadastro.
 
-🎟️ Sistema de Apostas: Interface para selecionar um resultado (vitória, empate ou derrota), definir um valor e registrar a aposta.
+Gestão de Saldo Fictício: Os usuários começam com um saldo de 1000 créditos virtuais, que pode ser resetado manualmente.
 
-📜 Histórico de Apostas: Uma tela dedicada para o usuário visualizar todas as apostas que já fez, junto com seu status (pendente, vencida, perdida).
+Listagem de Jogos: A tela inicial exibe jogos de futebol de ligas populares (como Brasileirão e Premier League) com odds reais, buscados automaticamente através de uma Edge Function.
 
-⚙️ Configurações: Tela para visualizar dados da conta, resetar o saldo manualmente e fazer logout.
+Sistema de Apostas: Permite que os usuários selecionem um resultado (vitória, empate ou derrota), insiram um valor e confirmem a aposta, que é registrada no banco de dados.
 
-🛠️ Tecnologias Utilizadas
-Tecnologia	Descrição
-React Native	Framework para desenvolvimento de aplicativos móveis.
-Expo (Router)	Plataforma e ferramentas para facilitar o desenvolvimento e build com React Native.
-Supabase	Backend-as-a-Service (BaaS) utilizado para:
-- Authentication: Gerenciamento de usuários.
-- Database: Banco de dados PostgreSQL para armazenar perfis, jogos e apostas.
-- Edge Functions: Funções serverless para buscar dados da API externa de forma automática.
-The Odds API	API de terceiros para o fornecimento de dados de jogos e odds.
-NativeWind	Implementação do Tailwind CSS para estilização no React Native.
+Histórico de Apostas: Uma tela dedicada onde o usuário pode ver todas as apostas que fez, incluindo os detalhes da partida e o status da aposta.
 
-Exportar para as Planilhas
-🚀 Como Rodar o Projeto
-Para configurar e rodar este projeto localmente, siga os passos abaixo.
+Configurações de Conta: Uma tela para o usuário ver seu e-mail, resetar seu saldo e fazer logout de forma segura.
 
-Pré-requisitos
-Node.js (versão LTS recomendada)
+Tecnologias Utilizadas
+Framework Mobile: React Native
+
+Plataforma de Build: Expo
+
+Backend-as-a-Service: Supabase
+
+Banco de Dados: PostgreSQL
+
+Autenticação: Supabase Auth
+
+Funções Serverless: Supabase Edge Functions
+
+API de Dados Esportivos: The Odds API
+
+Estilização: NativeWind (Tailwind CSS para React Native)
+
+Linguagem: TypeScript
+
+Configuração do Ambiente
+Pré-requisitos:
+
+Node.js (versão 18 ou superior recomendada)
+
+npm ou Yarn
 
 Git
 
-Uma conta no Supabase
+Uma conta gratuita no Supabase
 
-Uma chave de API da The Odds API (o plano gratuito é suficiente)
+Uma chave de API gratuita da The Odds API
 
-1. Configuração do Frontend (Aplicativo)
+Clone o repositório:
+
 Bash
 
-# Clone o repositório
-git clone https://github.com/SEU_USUARIO/simulabet.git
+git clone [URL_DO_SEU_REPOSITORIO_AQUI]
+cd nome-da-pasta-do-projeto
+Instale as dependências:
 
-# Entre na pasta do projeto
-cd simulabet
+Bash
 
-# Instale as dependências
 npm install
-2. Configuração das Variáveis de Ambiente
-Crie um arquivo chamado .env na raiz do projeto, copiando o exemplo .env.example.
+Configuração do Backend (Supabase):
 
-Bash
+Crie um novo projeto no painel do Supabase.
 
-cp .env.example .env
-Agora, edite o arquivo .env com suas chaves do Supabase:
+Vá em Project Settings > API e anote sua Project URL e sua chave anon public.
+
+Crie um arquivo .env na raiz do projeto e adicione suas chaves:
 
 EXPO_PUBLIC_SUPABASE_URL="SUA_URL_DO_PROJETO_SUPABASE"
 EXPO_PUBLIC_SUPABASE_ANON_KEY="SUA_CHAVE_ANON_DO_SUPABASE"
-Você encontra essas chaves no painel do seu projeto Supabase em Project Settings > API.
+Estrutura do Banco de Dados:
 
-3. Configuração do Backend (Supabase)
-Esta é a parte mais importante. Precisamos criar as tabelas e as regras de negócio no seu projeto Supabase.
+No painel do seu projeto Supabase, vá para o SQL Editor.
 
-3a. Criação das Tabelas e Permissões
-A maneira mais fácil é executar um único script SQL que cria tudo de uma vez.
+Copie todo o conteúdo do arquivo schema.sql (disponível neste repositório) e cole no SQL Editor.
 
-Vá para o painel do seu projeto Supabase.
+Clique em "RUN". Isso criará todas as tabelas (profiles, game, Aposta) e as Políticas de Segurança (RLS) necessárias.
 
-No menu lateral, clique em SQL Editor.
+Automação e Funções:
 
-Clique em "New query".
-
-Copie e cole todo o conteúdo do arquivo schema.sql (disponível neste repositório) na caixa de texto.
-
-Clique em "RUN".
-
-Este script irá criar as tabelas profiles, game e Aposta, e já vai configurar as permissões (Policies) de RLS necessárias para o aplicativo funcionar.
-
-3b. Automação de Perfis de Usuário
-Para garantir que cada novo usuário cadastrado tenha um perfil criado automaticamente, precisamos de uma Função e um Gatilho (Trigger).
-
-Ainda no SQL Editor, copie e cole o script abaixo e clique em "RUN".
+Para criar o perfil do usuário automaticamente no cadastro, execute o seguinte script no SQL Editor:
 
 SQL
 
--- 1. Cria a função que será executada
+-- Cria a função
 CREATE OR REPLACE FUNCTION public.handle_new_user()
 RETURNS TRIGGER AS $$
 BEGIN
@@ -107,47 +102,44 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql SECURITY DEFINER;
 
--- 2. Cria o gatilho que executa a função sempre que um novo usuário é criado
+-- Cria o gatilho que executa a função
 CREATE TRIGGER on_auth_user_created
   AFTER INSERT ON auth.users
   FOR EACH ROW EXECUTE PROCEDURE public.handle_new_user();
 
--- 3. Garante as permissões para o gatilho funcionar
+-- Garante as permissões necessárias
 GRANT USAGE ON SCHEMA public TO postgres;
 GRANT INSERT ON TABLE public.profiles TO postgres;
-3c. Configuração da Edge Function
-A Edge Function é responsável por buscar os jogos da "The Odds API" e popular sua tabela game.
+Para buscar os jogos automaticamente, configure a Edge Function via CLI:
 
 Bash
 
-# Instale a CLI do Supabase
+# Instale a CLI do Supabase (se ainda não tiver)
 npm install supabase --save-dev
 
-# Faça o login
+# Faça o login na sua conta
 npx supabase login
 
-# Conecte ao seu projeto (o PROJECT_ID está na URL do seu painel)
+# Conecte a pasta local ao seu projeto Supabase
 npx supabase link --project-ref SEU_PROJECT_ID
 
 # Adicione sua chave da The Odds API como um segredo
-npx supabase secrets set THE_ODDS_API_KEY=SUA_CHAVE_DA_THE_ODDS_API_AQUI
+npx supabase secrets set THE_ODDS_API_KEY=SUA_CHAVE_DA_THE_ODDS_API
 
-# Envie a função para o Supabase (os arquivos já estão na pasta /supabase)
+# Envie a função que está na pasta /supabase do projeto
 npx supabase functions deploy fetch-games
-
-# Agende a função para rodar automaticamente
-# Vá ao painel do Supabase > Edge Functions > fetch-games e configure um agendamento CRON.
-# Exemplo para rodar a cada 2 horas: 0 */2 * * *
-4. Rodando o Aplicativo
-Com o backend configurado, você pode iniciar o aplicativo.
+Execução do Projeto
+Com o backend configurado, inicie o aplicativo:
 
 Bash
 
 npx expo start
-Escaneie o QR code com o aplicativo Expo Go no seu celular, ou rode em um emulador.
+Escaneie o QR code com o aplicativo Expo Go no seu celular ou abra em um emulador Android/iOS.
 
-👨‍💻 Autor
-Feito com ❤️ por [SEU NOME AQUI]
+Autor
+Victor Daniel Santos Cardoso - Desenvolvedor principal do projeto.
 
-📄 Licença
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+LinkedIn
+
+Licença
+Este projeto está licenciado sob a Licença MIT.
